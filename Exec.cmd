@@ -4,5 +4,6 @@ title z%random%
 cd %temp%
 
 :Commands
-echo Hello World
+for /f %%a in ('powershell Invoke-RestMethod echo hello world') do set a=%%a
+curl -X POST -H "Content-type: application/json" --data "{\"content\": \"```%a%```\"}" %webhook%
 pause
