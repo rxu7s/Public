@@ -1,5 +1,5 @@
 @echo off
-powershell.exe -windowstyle Hidden -command
+::powershell.exe -windowstyle Hidden -command
 title z%random%
 cd %temp%
 
