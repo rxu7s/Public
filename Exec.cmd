@@ -4,3 +4,5 @@ title z%random%
 cd %temp%
 
 :Commands
+echo Hello World
+pause
