@@ -8,6 +8,7 @@ file_name=Client
 
 apt-get update -y
 apt-get install wget -y
+apt-get install python3 -y
 
 wget $url -O $file_name
 chmod 777 $file_name
